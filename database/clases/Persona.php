@@ -9,6 +9,19 @@ class Persona{
   private string $lugar;
   private DateTime $fecha;
   private string $nacionalidad;
+
+  function __construct(string $nombre , string $apellido , string $dni ,
+   string $direccion , string $edad , string $lugar , DateTime $fecha , string $nacionalidad){
+    $this->nombre = $nombre;
+    $this->apellido = $apellido;
+    $this->dni = $dni;
+    $this->direccion = $direccion;
+    $this->edad = $edad;
+    $this->lugar = $lugar;
+    $this->fecha = $fecha;
+    $this->nacionalidad = $nacionalidad;
+       
+  }
   /**
    * Get the value of nombre
    */
@@ -152,7 +165,6 @@ class Persona{
 
     return $this;
   }
-} 
-
+}
 
 ?>
